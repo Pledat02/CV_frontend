@@ -20,7 +20,7 @@
       }
       #container {
         border: solid 0.3px gray;
-        width: 910px;
+        width: 860px;
         height: 1080px;
       }
       #header_cv {
@@ -42,7 +42,7 @@
       }
       #body_cv {
         display: grid;
-        grid-template-columns: 22% 78%;
+        grid-template-columns: 22% 76%;
         gap: 10px;
         height: 86%;
         width: 90%;
@@ -82,7 +82,7 @@
         color: #0f96da;
       }
       .font_content {
-        font-size: 13px;
+        font-size: 12px;
         color: #78777c;
       }
       /* .center{
@@ -117,15 +117,18 @@
       .h_line {
         margin-top: 40px;
         width: 1px;
-        height: 22%;
+        height: 20%;
         background-color: #838682;
         position: absolute;
       }
       .v_line {
         margin-top: 40px;
-        width: 90%;
+        width: 5%;
         height: 1px;
         background-color: #838682;
+      }
+      .nav_line{
+         width: 15px;
       }
       /* .section_content {
         margin-bottom: 20px;
@@ -141,26 +144,62 @@
       }
 
       td:nth-child(1) {
-        padding-left: 20px;
-        width: 20%;
+        padding-left: 18px;
+        width: 16%;
       }
 
       td:nth-child(2) {
-        width: 28%;
+        padding-left: 45px;
+        width: 35%;
+      }
+      td {
+        text-transform: uppercase;
       }
 
-      td:nth-child(3) {
-        width: 40%;
-      }
+      
       .title_section {
         position: absolute;
+        text-transform: uppercase;
         top: 32px;
         left: 20px;
+        font-weight: bolder;
+      }
+      .nav_title {
+        font-size: 14px;
+        font-weight: bolder;
       }
       .header_section {
         display: grid;
         grid-template-columns: auto auto;
         position: relative;
+      }
+      .grid_nav{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        
+      }
+      #skills{
+        margin: 20px;
+        margin-top: 30px;
+        display: grid;
+        row-gap: 6px;
+        grid-template-columns: 18% auto;
+      }
+      #balls_ray{
+        margin-left: 10px;
+        display: inline-block;
+        letter-spacing: -3.3px;
+      }
+      .smallball{
+        display: inline-block;
+        border: 1px solid #838682;
+        border-radius: 50%;
+        height: 8px;
+        width: 8px;
+      }
+      .active_smallball{
+        background-color: #eaeaea;
       }
     </style>
   </head>
@@ -278,41 +317,41 @@
             <div class="h_line"></div>
 
             <div class="header_section">
-              <div class="v_line" style="width: 5%"></div>
+              <div class="v_line"></div>
               <div class="font_section title_section">WORK EXPERIENCE</div>
             </div>
             <table style="border: none">
               <tr>
-                <td class="font_content">Alfreds</td>
-                <td class="font_section">Maria Anders</td>
-                <td class="font_section">Germany</td>
+                <td class="font_content" align="right">2021 - 2022</td>
+                <td class="font_section nav_title">position</td>
+                <td class="font_section nav_title">company name</td>
               </tr>
               <tr>
-                <td class="font_content">Centro</td>
-                <td class="font_content">Francisco Chang</td>
-                <td class="font_content">Mexico</td>
-              </tr>
-              <tr style="height: 18px"></tr>
-              <tr>
-                <td class="font_content">Centro</td>
-                <td class="font_content">Francisco Chang</td>
-                <td class="font_content">Mexico</td>
-              </tr>
-              <tr>
-                <td class="font_content">Centro</td>
-                <td class="font_content">Francisco Chang</td>
-                <td class="font_content">Mexico</td>
+                <td class="font_content" align="right">1 YEAR</td>
+                <td class="font_content">Freshman </td>
+                <td class="font_content">Nong Lam TP.HCM </td>
               </tr>
               <tr style="height: 18px"></tr>
               <tr>
-                <td class="font_content">Centro</td>
-                <td class="font_content">Francisco Chang</td>
-                <td class="font_content">Mexico</td>
+                <td class="font_content" align="right">2022 - 2023</td>
+                <td class="font_content" ></td>
+                <td class="font_content"></td>
               </tr>
               <tr>
-                <td class="font_content">Centro</td>
-                <td class="font_content">Francisco Chang</td>
-                <td class="font_content">Mexico</td>
+                <td class="font_content"align="right">1 YEAR</td>
+                <td class="font_content">Sophomore </td>
+                <td class="font_content">Nong Lam TP.HCM</td>
+              </tr>
+              <tr style="height: 18px"></tr>
+              <tr>
+                <td class="font_content"align="right">2023 - 2024</td>
+                <td class="font_content"></td>
+                <td class="font_content"></td>
+              </tr>
+              <tr>
+                <td class="font_content"align="right">1 YEAR</td>
+                <td class="font_content">Senior </td>
+                <td class="font_content">Nong Lam TP.HCM</td>
               </tr>
             </table>
           </div>
@@ -324,45 +363,159 @@
             <div class="h_line"></div>
 
             <div class="header_section">
-              <div class="v_line" style="width: 5%"></div>
+              <div class="v_line" ></div>
               <div class="font_section title_section">EDUCATION</div>
             </div>
             <table style="border: none">
               <tr>
-                <td class="font_content">Alfreds</td>
-                <td class="font_section">Maria Anders</td>
-                <td class="font_section">COLEGE/UNIVERSITY/HIGH SCHOOL</td>
+                <td class="font_content"align="right">2018 - 2021</td>
+                <td class="font_section nav_title ">Degree</td>
+                <td class="font_section nav_title">primary / middle / HIGH SCHOOL</td>
               </tr>
               <tr>
-                <td class="font_content">Centro</td>
-                <td class="font_content">Francisco Chang</td>
-                <td class="font_content">Mexico</td>
-              </tr>
-              <tr style="height: 18px"></tr>
-              <tr>
-                <td class="font_content">Centro</td>
-                <td class="font_content">Francisco Chang</td>
-                <td class="font_content">Mexico</td>
-              </tr>
-              <tr>
-                <td class="font_content">Centro</td>
-                <td class="font_content">Francisco Chang</td>
-                <td class="font_content">Mexico</td>
+                <td class="font_content"align="right">3 years</td>
+                <td class="font_content">high school diploma</td>
+                <td class="font_content">Chu Van An High School</td>
               </tr>
               <tr style="height: 18px"></tr>
               <tr>
-                <td class="font_content">Centro</td>
-                <td class="font_content">Francisco Chang</td>
-                <td class="font_content">Mexico</td>
+                <td class="font_content"align="right">2014-2018</td>
+                <td class="font_content"></td>
+                <td class="font_content"></td>
               </tr>
               <tr>
-                <td class="font_content">Centro</td>
-                <td class="font_content">Francisco Chang</td>
-                <td class="font_content">Mexico</td>
+                <td class="font_content"align="right">4 years</td>
+                <td class="font_content">secondary school diploma</td>
+                <td class="font_content">Minh Long Secondary School</td>
+              </tr>
+              <tr style="height: 18px"></tr>
+              <tr>
+                <td class="font_content"align="right">Centro</td>
+                <td class="font_content"></td>
+                <td class="font_content"></td>
+              </tr>
+              <tr>
+                <td class="font_content"align="right">5 year</td>
+                <td class="font_content">primary school diploma</td>
+                <td class="font_content">Minh Long Primary School</td>
               </tr>
             </table>
           </div>
-          <div class="grid_nav"></div>
+          <br>
+          <div class="grid_nav">
+            <div class="section_content">
+              <div class="h_line "></div>
+
+              <div class="header_section">
+                <div class="v_line nav_line" ></div>
+                <div class="font_section title_section">professional skills</div>
+              </div>
+              <div id="skills">
+                <div>illustrator</div>
+                <div id="balls_ray">
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                </div>
+                <div>illustrator</div>
+                <div id="balls_ray">
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                </div>
+                <div>illustrator</div>
+                <div id="balls_ray">
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                </div>
+                <div>illustrator</div>
+                <div id="balls_ray">
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                </div>
+                <div>illustrator</div>
+                <div id="balls_ray">
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                </div>
+                <div>illustrator</div>
+                <div id="balls_ray">
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                    <div class="smallball"></div>
+                </div>
+              </div>
+            </div>
+            <div class="section_content">
+              <div class="h_line"></div>
+
+              <div class="header_section">
+                <div class="v_line nav_line" ></div>
+                <div class="font_section title_section ">my awards</div>
+              </div>
+            </div>
+            <div class="section_content">
+              <div class="h_line"></div>
+
+              <div class="header_section">
+                <div class="v_line nav_line" ></div>
+                <div class="font_section title_section">languages</div>
+              </div>
+            </div>
+            <div class="section_content">
+              <div class="h_line"></div>
+
+              <div class="header_section">
+                <div class="v_line nav_line" ></div>
+                <div class="font_section title_section">hobbies & interests</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div id="footer_cv"></div>
